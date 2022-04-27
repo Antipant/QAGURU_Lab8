@@ -16,9 +16,6 @@ public class HWTests {
         // open wikiTab
         $("#wiki-tab").click();
 
-        // have text
-        $(".markdown-body").shouldHave(text("Soft assertions"));
-
         // have text right bar
         $("li.wiki-more-pages-link").$("button").click();
         $(".wiki-rightbar").shouldHave(text("SoftAssertions"));
